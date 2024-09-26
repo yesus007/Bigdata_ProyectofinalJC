@@ -1,0 +1,9 @@
+{
+	"name": "jesuscastaneda",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dd0697b7-4293-43cc-994c-c24e3337f24f",
+		"tenantId": "b0fcc6fa-5497-4f39-afd2-57500a8ba890"
+	}
+}
