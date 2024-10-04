@@ -436,9 +436,7 @@
 						"policy": {
 							"secureInput": false
 						},
-						"userProperties": [
-							{}
-						],
+						"userProperties": [],
 						"typeProperties": {
 							"pipeline": {
 								"referenceName": "ingesta_input_capa_bronce",
