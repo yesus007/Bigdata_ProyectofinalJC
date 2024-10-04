@@ -424,7 +424,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/exec_Ingesta_capa_plata_oro')]",
+			"name": "[concat(parameters('factoryName'), '/exec_Master')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -516,7 +516,7 @@
 				"pipelines": [
 					{
 						"pipelineReference": {
-							"referenceName": "exec_Ingesta_capa_plata_oro",
+							"referenceName": "exec_Master",
 							"type": "PipelineReference"
 						},
 						"parameters": {}
@@ -525,15 +525,15 @@
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
-						"frequency": "Minute",
-						"interval": 1,
+						"frequency": "Hour",
+						"interval": 5,
 						"startTime": "2024-10-04T01:11:00",
 						"timeZone": "SA Pacific Standard Time"
 					}
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/exec_Ingesta_capa_plata_oro')]"
+				"[concat(variables('factoryId'), '/pipelines/exec_Master')]"
 			]
 		}
 	]
