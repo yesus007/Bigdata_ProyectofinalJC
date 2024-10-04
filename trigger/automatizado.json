@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "exec_Ingesta_capa_plata_oro",
+					"referenceName": "exec_Master",
 					"type": "PipelineReference"
 				}
 			}
