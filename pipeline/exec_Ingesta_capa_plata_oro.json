@@ -9,6 +9,7 @@
 				"policy": {
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
 						"referenceName": "ingesta_input_capa_bronce",
