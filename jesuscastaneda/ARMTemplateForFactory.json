@@ -505,6 +505,36 @@
 				"[concat(variables('factoryId'), '/pipelines/ingesta_capa_bronce_plata')]",
 				"[concat(variables('factoryId'), '/pipelines/Ingesta_capa_plata_oro')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/automatizado')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "exec_Ingesta_capa_plata_oro",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 1,
+						"startTime": "2024-10-04T06:08:00",
+						"timeZone": "SA Pacific Standard Time"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/exec_Ingesta_capa_plata_oro')]"
+			]
 		}
 	]
 }
