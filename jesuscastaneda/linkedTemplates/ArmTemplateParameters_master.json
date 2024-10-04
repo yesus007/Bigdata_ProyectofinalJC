@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "jesuscastaneda"
+		},
+		"conector_ADLS_DataFactory_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks_DataFactory_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"conector_ADLS_DataFactory_properties_typeProperties_url": {
+			"value": "https://jcastanedacertus.dfs.core.windows.net/"
+		},
+		"AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId": {
+			"value": "1003-214840-hzzx56oz"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "1003-214840-hzzx56oz"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
