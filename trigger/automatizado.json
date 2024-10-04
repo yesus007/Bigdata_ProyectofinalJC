@@ -1,0 +1,24 @@
+{
+	"name": "automatizado",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "exec_Ingesta_capa_plata_oro",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2024-10-04T06:08:00",
+				"timeZone": "SA Pacific Standard Time"
+			}
+		}
+	}
+}
